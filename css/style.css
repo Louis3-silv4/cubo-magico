@@ -39,3 +39,22 @@
     left: 100px;
     transform: rotateX(10deg) rotateY(10deg);
 }
+
+.cubo:hover {
+    animation-name: rotate;
+    animation-duration: 10s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(-20deg) rotateY(-10deg);
+    }
+
+    50% {
+        transform: rotateX(20deg) rotateY(350deg);
+    }
+
+    to {
+        transform: rotateX(-30deg) rotateY(-80deg);
+    }
+}
