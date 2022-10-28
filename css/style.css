@@ -1,5 +1,5 @@
 .face {
-    display: block;
+    display: flex;
     width: 200px;
     height: 200px;
     position: absolute;
@@ -42,7 +42,10 @@
 
 .cubo:hover {
     animation-name: rotate;
-    animation-duration: 10s;
+    animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease;
 }
 
 @keyframes rotate {
@@ -51,10 +54,10 @@
     }
 
     50% {
-        transform: rotateX(20deg) rotateY(350deg);
+        transform: rotateX(40deg) rotateY(350deg);
     }
 
     to {
-        transform: rotateX(-30deg) rotateY(-80deg);
+        transform: rotateX(-50deg) rotateY(-50deg);
     }
 }
